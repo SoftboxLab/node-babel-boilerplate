@@ -1,0 +1,24 @@
+{
+  "name": "movimentacao-entregas-marketplace",
+  "version": "1.0.0",
+  "description": "Movimentação simples de entregas",
+  "main": "lib/index.js",
+  "author": "William Okano <williamokano@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
